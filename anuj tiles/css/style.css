@@ -15,6 +15,7 @@
     margin: 0px 0px;
     padding:1em 0em;
     position: fixed;
+    z-index: 9999;
   }
 
   .headerleft {
@@ -64,81 +65,13 @@
     text-decoration: none;
   }
   /* headereends */
- .slider-frame{
-  background-size: 100% 100%;
-      overflow: hidden;
-      height: 800px;
-      width: 100%;
-   
-      margin-top: 20px;
-  }
- 
-  /*---------- SLIDE ANIMATION --------------*/
- 
- 
-  @keyframes slide_animation{
-      0% {left:0px;}
-      10% {left:0px;}
-      20% {left:1200px;}
-      30% {left:1200px;}
-      40% {left: 2400px;}
-      50% {left: 2400px;}
-      60% {left: 1200px;}
-      70% {left: 1200px;}
-      80% {left: 0px;}
-      90% {left: 0px;}
-      100% {left:0px;}
-  }
- 
-  @-webkit-keyframes slide_animation{
-      0% {left:0px;}
-      10% {left:0px;}
-      20% {left:1200px;}
-      30% {left:1200px;}
-      40% {left: 2400px;}
-      50% {left: 2400px;}
-      60% {left: 1200px;}
-      70% {left: 1200px;}
-      80% {left: 0px;}
-      90% {left: 0px;}
-      100% {left:0px;}
-  }
- 
-  .slide-images{
-      width: 3600px;
-      height: 800px;
-      margin: 0 0 0 -2400px;
-      position: relative;
-      -webkit-animation-name: slide_animation;
-      animation-name: slide_animation;
-      -webkit-animation-duration: 15s;
-      animation-duration: 15s;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
-      -webkit-animation-direction: alternate;
-      animation-direction: alternate;
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
-  }
- 
-  .img-container{
-      height: 800px;
-      width: 1200px;
-      position: relative;
-      float: left;
-  }
- 
- 
-
-
-
-  /* slider ends */
   .hero{
     float: left;
     width: 100%;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.308)), url('../images/bg1.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.308)), url('../images/img1.jpg');
     background-size: 100% 100%;
-    height: 57em;
+    height: 53em;
+    margin: 6em 0em;
   }
   .hero h1{
     font-family: 'Raleway', sans-serif;
@@ -147,9 +80,59 @@
     text-transform: uppercase;
     color: white;
     text-align: center;
-    padding: 5em 0em; }
+    padding: 5em 0em;
+    margin-left: 50%;
+    transform: translateX(-200%);
+    opacity: 0;
+    animation: slide-in-anim 8s ease-out forwards;
+  }
+  
+  @keyframes slide-in-anim {
+    20% {
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(-45%);
+    }
+    75% {
+      transform: translateX(-52%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+  
+  
+/* sliders */
+.slidesec{
+  float: left;
+  width: 100%;
+  background: #313131 ;
+  margin-top: -6em;
 
-  /* contact us */
+}
+  .slider{
+    width: 1903px;
+    height: 1080px;
+    background-image: url('../images/bg3.jpg');
+   
+    animation:slide 20s infinite;
+  }
+  @keyframes slide{
+    25%{
+      background: url('../images/bg2.jpg');
+    }
+    50%{
+      background: url('../images/bg3.jpg');
+    }75%{
+      background: url('../images/bg4.jpg');
+    }100%{
+      /* background: url('../images/bg5.jpg'); */
+    }
+  }
+  /* slide ends */
+  
   .contact{
     float: left;
     width: 100%;
@@ -191,6 +174,7 @@
 	padding: 10px 0px;
 	text-align: center;
 }
+
 
 
 
