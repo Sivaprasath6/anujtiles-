@@ -1,0 +1,91 @@
+li {
+    padding: 5px;
+}
+
+.bold {
+    font-size: 15px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 700 !important;
+    border: 2px solid transparent;
+    color: rgb(5, 5, 5) !important;
+}
+
+.nav-item {
+    margin-left: 50px !important;
+    text-align: center !important;
+}
+
+.nav-item:hover {
+    background-color: rgb(248, 244, 244);
+    transition: .1s;
+}
+
+.logodiv {
+    margin-left: 124px !important;
+}
+
+.homeimg {
+    float: left;
+    width: 100%;
+}
+
+.contact {
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 2em 0em;
+
+}
+
+.contact h1 {
+    font-family: 'Open Sans', sans-serif;
+    padding: 16px 0px;
+
+}
+
+.address {
+    float: left;
+    width: 50%;
+    margin: 0px 0px;
+}
+
+.address p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mail {
+    float: right;
+    width: 50%;
+    margin: 0px 0px;
+}
+
+.mail li {
+    display: inline;
+    padding: 0em 5px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mail p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mail a {
+    color: #000000;
+}
+
+.mail a:hover {
+    color: red;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+}
