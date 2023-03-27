@@ -12,7 +12,11 @@ li {
     border: 2px solid transparent;
     color: rgb(5, 5, 5) !important;
 }
-
+nav#navbar {
+    position: fixed;
+    background: red;
+    width: inherit;
+}
 .nav-item {
     margin-left: 50px !important;
     text-align: center !important;
@@ -29,20 +33,25 @@ li {
 
 .homeimg {
     float: left;
-    width: 100%;
+    width: auto;
+
 }
+/* contact */
+
 
 .contact {
     float: left;
     text-align: center;
     width: 100%;
     padding: 2em 0em;
+    margin-bottom: 1em;
 
 }
 
 .contact h1 {
     font-family: 'Open Sans', sans-serif;
     padding: 16px 0px;
+    margin-bottom: 28px;
 
 }
 
@@ -53,7 +62,11 @@ li {
 }
 
 .address p {
+    
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 530;
+
 }
 
 .mail {
@@ -71,6 +84,68 @@ li {
 
 .mail p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 530;
+
+}
+
+.mail a {
+    color: #000000;
+}
+
+.mail a:hover {
+    color: red;
+}
+@media screen and (max-width: 720px) {
+    .contact {
+        float: left;
+        text-align: center;
+        width: auto;
+        padding: 2em 0em;
+        margin-bottom: 1em;
+        text-align: center;
+    
+    }
+   
+.contact h1 {
+    font-family: 'Open Sans', sans-serif;
+    padding: 16px 0px;
+    margin-bottom: 28px;
+
+}
+
+.address {
+    float: left;
+    width: auto;
+    margin: 0px 0px;
+}
+
+.address p {
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 530;
+
+}
+
+.mail {
+    float: right;
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.mail li {
+    display: inline;
+    padding: 0em 5px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mail p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 530;
+
 }
 
 .mail a {
@@ -81,11 +156,13 @@ li {
     color: red;
 }
 
+  }
+  /* footer */
 .footer {
     float: left;
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 10px 0px;
+    padding-top: 21px;
     text-align: center;
 }
