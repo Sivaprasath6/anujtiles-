@@ -1,0 +1,67 @@
+body {
+    background-color: #d6ebf78f !important;
+}
+li {
+    padding: 5px;
+}
+
+.bold {
+    font-size: 15px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 700 !important;
+    border: 2px solid transparent;
+    color: rgb(5, 5, 5) !important;
+}
+nav#navbar {
+    position: fixed;
+    background: red;
+    width: inherit;
+    z-index: 9999;
+}
+.nav-item {
+    margin-left: 50px !important;
+    text-align: center !important;
+}
+
+.nav-item:hover {
+    background-color: rgb(248, 244, 244);
+    transition: .1s;
+}
+
+.logodiv {
+    margin-left: 124px !important;
+}
+/* navends */
+
+/* footersection */
+ 
+.footers {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color:#333;
+    text-align: center;
+    color: white;
+  }
+/* careers section */
+.careers{
+    float: left;
+    width: 100%;
+    margin-top: 8em;
+}
+.heading-title {
+    font-size: 56px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 3em;
+}
+ul.joblists{
+    display: inline;
+}
